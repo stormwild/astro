@@ -627,8 +627,8 @@ importers:
         specifier: ^3.0.1
         version: 3.0.1
       undici:
-        specifier: ^5.23.0
-        version: 5.23.0
+        specifier: ^5.26.2
+        version: 5.26.2
       unist-util-visit:
         specifier: ^4.1.2
         version: 4.1.2
@@ -4308,8 +4308,8 @@ importers:
         specifier: ^1.13.0
         version: 1.13.0
       undici:
-        specifier: ^5.23.0
-        version: 5.23.0
+        specifier: ^5.26.2
+        version: 5.26.2
 
   packages/integrations/node/test/fixtures/api-route:
     dependencies:
@@ -4967,8 +4967,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       undici:
-        specifier: ^5.23.0
-        version: 5.23.0
+        specifier: ^5.26.2
+        version: 5.26.2
       which-pm-runs:
         specifier: ^1.1.0
         version: 1.1.0
@@ -7960,6 +7960,10 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
+  /@fastify/busboy@2.0.0:
+    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
+    engines: {node: '>=14'}
+
   /@fontsource/monofett@5.0.9:
     resolution: {integrity: sha512-huRzEMeEuZE5LuiDqGQdcvtOKEIOYnIpfz9g/IeZn06sdRbVu8HEjJgRnJvtdT4NYV7U/XGnB3LL/LYQb1F0hg==}
     dev: false
@@ -8226,7 +8230,7 @@ packages:
       '@octokit/plugin-paginate-rest': 8.0.0(@octokit/core@5.0.0)
       '@octokit/plugin-rest-endpoint-methods': 9.0.0(@octokit/core@5.0.0)
       '@octokit/types': 11.1.0
-      undici: 5.23.0
+      undici: 5.26.2
     dev: true
 
   /@octokit/auth-action@4.0.0:
@@ -9992,12 +9996,6 @@ packages:
     dependencies:
       run-applescript: 5.0.0
     dev: true
-
-  /busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
-    dependencies:
-      streamsearch: 1.1.0
 
   /bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
@@ -13963,7 +13961,7 @@ packages:
       set-cookie-parser: 2.6.0
       source-map-support: 0.5.21
       stoppable: 1.1.0
-      undici: 5.23.0
+      undici: 5.26.2
       workerd: 1.20230814.1
       ws: 8.13.0
       youch: 3.2.3
@@ -16287,10 +16285,6 @@ packages:
       mixme: 0.5.9
     dev: true
 
-  /streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
-
   /streamx@2.15.1:
     resolution: {integrity: sha512-fQMzy2O/Q47rgwErk/eGeLu/roaFWV0jVsogDmrszM9uIw8L5OA+t+V93MgYlufNptfjmYR1tOMWhei/Eh7TQA==}
     dependencies:
@@ -17065,11 +17059,11 @@ packages:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  /undici@5.23.0:
-    resolution: {integrity: sha512-1D7w+fvRsqlQ9GscLBwcAJinqcZGHUKjbOmXdlE/v8BvEGXjeWAax+341q44EuTcHXXnfyKNbKRq4Lg7OzhMmg==}
+  /undici@5.26.2:
+    resolution: {integrity: sha512-a4PDLQgLTPHVzOK+x3F79/M4GtyYPl+aX9AAK7aQxpwxDwCqkeZCScy7Gk5kWT3JtdFq1uhO3uZJdLtHI4dK9A==}
     engines: {node: '>=14.0'}
     dependencies:
-      busboy: 1.6.0
+      '@fastify/busboy': 2.0.0
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
